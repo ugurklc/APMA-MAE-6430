@@ -31,6 +31,7 @@ of the five previous trading days, `Lag1` through `Lag5`. We
 have also recorded `volume` (the number of shares traded on the previous day, in billions), `Today` (the percentage return on the date in question)  and `direction` (whether the market was `Up` or `Down` on this date). Our goal is to predict `direction` (a qualitative response) using the other features.
 
 ```{r chunk1}
+install.packages('ISLR2')
 library(ISLR2)
 help(Smarket)
 head(Smarket)
